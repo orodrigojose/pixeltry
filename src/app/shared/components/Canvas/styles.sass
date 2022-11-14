@@ -1,0 +1,31 @@
+@use '../../../sassStyles/variables'
+@use '../../../sassStyles/mixins'
+
+.canvas-container
+  @include mixins.fill-container
+  @include mixins.flex-center
+  scrollbar-width: 30px
+  overflow: auto
+  background-color: variables.$grey
+  
+#pixels
+  margin: 20px
+  cursor: pointer
+  @include mixins.mobile
+    cursor: crosshair
+
+#canvas-actions
+  @include mixins.flex-center
+  gap: 4px
+  position: absolute
+  bottom: 18%
+  left: 0
+  padding: 8px
+  border-radius: 0 10px 10px 0
+  background-color: variables.$dark-color
+  
+  .action
+    @include mixins.default-button(40px, 40px, 5px, variables.$primary-color)
+    @include mixins.box-shadow-outline
+    color: white
+

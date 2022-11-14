@@ -1,0 +1,31 @@
+@use '../../../sassStyles/variables'
+@use '../../../sassStyles/mixins'
+
+.footer-container
+  @include mixins.flex-center
+  flex-direction: column
+  justify-content: space-evenly
+  gap: 5px
+  width: 100%
+  min-height: 38px
+  color: variables.$white
+  padding: 5px 
+  background-color: variables.$dark-color
+
+  @include mixins.mobile
+    height: 55px
+
+  span
+    font-size: 11pt
+
+    a
+      text-decoration: none
+      color: variables.$secondary-color
+
+  #github-link
+    width: 20px
+    height: 20px
+
+    .icon
+      @include mixins.fill-container
+      color: variables.$white

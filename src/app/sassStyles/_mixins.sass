@@ -1,0 +1,38 @@
+@use 'variables'
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+  
+@mixin fill-container
+  width: 100%
+  height: 100%
+
+@mixin brightness-hover($count)
+  transition: color, filter .5s ease
+  
+  &:hover, &:focus
+    color: white
+    filter: brightness($count)
+
+@mixin box-shadow-outline
+  transition: color, margin-top, box-shadow .7s ease
+  
+  &:focus
+    color: white
+    margin-top: 4px
+    box-shadow: 0 0 0 4px rgba(87, 113, 172, 0.6)
+
+@mixin default-button($width, $height, $radius, $bg-color)
+  width: $width
+  height: $height
+  cursor: pointer
+  border: none
+  outline: none
+  border-radius: $radius
+  background-color: $bg-color
+
+@mixin mobile
+  @media screen and (max-width: 768px)
+    @content

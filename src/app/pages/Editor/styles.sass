@@ -1,0 +1,25 @@
+@use '../../sassStyles/mixins'
+
+.container-editor
+  @include mixins.flex-center
+  width: 100vw
+  height: 100vh
+  
+.editor
+  @include mixins.fill-container
+  @include mixins.flex-center
+  justify-content: space-around
+  
+  @include mixins.mobile
+    flex-direction: column
+
+.sketchPicker
+  z-index: 3000
+  position: absolute
+  top: 5%
+  right: 11%
+  
+  @include mixins.mobile
+    top: 35%
+    right: 5%
+  
