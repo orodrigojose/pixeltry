@@ -21,7 +21,7 @@
   <p align="center">
     Uma ferramenta simples para criar/desenhar pixel art
     <br /><br />
-    <a href="">Ver Demo</a>
+    <a href="https://sennshi.github.io/pixeltry/">Ver Demo</a>
   </p>
 </div>
 
