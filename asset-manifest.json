@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pixeltry/static/css/main.508b4aff.css",
+    "main.js": "/pixeltry/static/js/main.99a0b1ae.js",
+    "service-worker.js": "/pixeltry/service-worker.js",
+    "index.html": "/pixeltry/index.html",
+    "main.508b4aff.css.map": "/pixeltry/static/css/main.508b4aff.css.map",
+    "main.99a0b1ae.js.map": "/pixeltry/static/js/main.99a0b1ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.508b4aff.css",
+    "static/js/main.99a0b1ae.js"
+  ]
+}
